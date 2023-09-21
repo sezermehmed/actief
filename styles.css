@@ -1,0 +1,283 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  /* Header styles */
+header {
+  background-color: #ffffff;
+  color: #202020;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  font-weight: bold; 
+  padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+}
+
+/* Individual list item styles */
+.nav-list li {
+  margin-right: 0; 
+  margin: 0 0 0 24px;
+}
+
+/* Anchor link styles */
+.nav-list a {
+  text-decoration: none;
+  color: #00b359;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* Logo styles */
+.logo {
+  margin-right: 18em;
+} 
+
+/* Anchor link hover styles */
+.nav-list a:hover {
+  color: #ffd700;
+}
+
+  
+  /* Logo styles */
+
+  
+  /* Fonts */
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  
+  /* Main content styles */
+  .main {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    overflow: hidden; /* Hide overflow to prevent horizontal scrollbars */
+  }
+  
+  /* Frame (Background Image) */
+  .frame {
+    background-image: url("img/srollbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-origin: border-box;
+    text-align: center;
+    height: 69vh;
+    width: auto; /* Double the width to create the endless effect */
+    position: relative;
+    animation: slideShow 18s linear infinite;
+    overflow: hidden;
+  }
+  
+  /* Overlay for Frame */
+  .frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay color */
+  }
+  .background {
+    background-image: url("img/srollbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-origin: border-box;
+    text-align: center;
+    height: 69vh;
+    width: auto; /* Double the width to create the endless effect */
+    position: absolute;
+    animation: slideShow 20s linear infinite;
+  }
+  
+  @keyframes slideShow {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-50%); /* Adjust the percentage for the desired sliding distance */
+    }
+  }
+  
+  /* Info section */
+  .info {
+    backface-visibility: visible;
+    color: #ffffff; /* Text color for the content */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+/* Style the section */
+/* Style the section */
+#services {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Style the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style the description paragraph */
+.description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Create a container for services */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+/* Style each service */
+.service {
+  flex: 0 0 calc(41.3333% - 13%); /* Adjust the width to fit 3 services in a row with spacing */
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0px;
+  border-radius: 11px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service img {
+
+  max-width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0px 0px;
+  min-width: 100%;
+}
+
+.service h2 {
+  font-size: 110%;
+  margin-top: 11px;
+  margin-bottom: 13px;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.service:hover h2 {
+  color: #007bff;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .service {
+    flex-basis: calc(50% - 20px); /* Adjust the width for 2 services in a row on smaller screens */
+  }
+}
+
+
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 80%; /* Adjust the max-width for the logo on smaller screens */
+}
+
+.footer-links ul {
+  padding: 0;
+  text-align: center; /* Center-align the links on smaller screens */
+}
+
+.footer-social {
+  margin-top: 20px; /* Add spacing at the top on smaller screens */
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-social a {
+    margin-right: 15px;
+}
+
+.footer-social img {
+    max-width: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
