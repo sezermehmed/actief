@@ -4,7 +4,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
   }
-  
+  html, body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
   /* Header styles */
   /* Header styles */
 header {
@@ -27,6 +31,9 @@ header {
   align-items: center;
   justify-content: center;
   height: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
 }
 
 /* Navigation list styles */
@@ -35,12 +42,17 @@ header {
   margin: 20px;
   padding: 0;
   display: flex;
+  gap: 20px;
+  list-style-type: none;
+  display: flex;
 }
 
 /* Individual list item styles */
 .nav-list li {
   margin-right: 0; 
   margin: 0 0 0 24px;
+  font-size: 18px;
+
 }
 
 /* Anchor link styles */
@@ -51,12 +63,18 @@ header {
   font-size: 16px;
   transition: color 0.3s;
 }
-
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 /* Logo styles */
 .logo {
   margin-right: 18em;
 } 
-
+.logo img {
+  width: 100px;
+  height: auto;
+}
 /* Anchor link hover styles */
 .nav-list a:hover {
   color: #ffd700;
@@ -71,11 +89,11 @@ header {
   
   /* Main content styles */
   .main {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    overflow: hidden; /* Hide overflow to prevent horizontal scrollbars */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Frame (Background Image) */
@@ -154,6 +172,9 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Style the description paragraph */
@@ -186,6 +207,7 @@ header {
   border: 1px solid #ddd;
   padding: 0px;
   border-radius: 11px;
+  text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -202,7 +224,7 @@ header {
 .service img {
 
   max-width: 100%;
-  height: 80%;
+  height: auto;
   border-radius: 10px 10px 0px 0px;
   min-width: 100%;
 }
