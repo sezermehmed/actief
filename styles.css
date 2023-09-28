@@ -30,6 +30,39 @@ header {
   font-weight: bold;
   padding-bottom: 1%;
   padding-top: 1%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+/* Style for social network icons */
+.social-network {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-network li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-network a {
+  display: inline-block;
+  font-size: 24px; /* Adjust the font size as needed */
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);/* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-network a:hover {
+  background-color: #0056b3; /* Change to your desired hover background color */
+  transform: scale(1.1); /* Add a slight scale effect on hover */
 }
 
 /* Navbar styles */
@@ -79,7 +112,7 @@ h1 {
   margin-right: 18em;
 }
 .logo img {
-  width: 100px;
+  width: auto;
   height: auto;
 }
 /* Anchor link hover styles */
@@ -114,15 +147,26 @@ h1 {
   transition: 0.4s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   /* Show the hamburger menu on mobile screens */
   .mobile-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
+    width: 30px;
+    height: 20px;
+    cursor:pointer;
     z-index: 999; /* Ensure it's above other content */
   }
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #202020;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
 
   /* Rotate and transition the hamburger icon for mobile menu toggle */
   .mobile-menu.active .hamburger:nth-child(1) {
@@ -139,24 +183,30 @@ h1 {
   /* Show the navigation links when the hamburger menu is active */
   .nav-list {
     display: none;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
+    background-color: #5c5a5a;
+    position: fixed;
+    top: 46px;
     left: 0;
     width: 100%;
+    height: auto;
     z-index: 1000;
+    transition: left 0.4s ease-in-out;
+
   }
 
   .nav-list.active {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
 
   /* Style the individual navigation links in the mobile menu */
   .nav-list.active li {
     margin: 10px 0;
   }
+
+
 }
 /* Frame (Background Image) */
 .frame {
