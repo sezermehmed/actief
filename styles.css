@@ -543,6 +543,7 @@ h3 {
 
   .section-header p {
     text-align: justify;
+  
 }
 form.gform {
   display: flex;
@@ -564,8 +565,38 @@ table {
   .footer {
     background-color: #1a1a1a;
     color: #fff;
-    padding: 60px 0;
+    padding: 40px 0;
   }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+/* Style the <a> element */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove default underline */
+  border-bottom: 2px solid transparent; /* Add a subtle border on hover */
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth color and border transition */
+
+  /* Add a subtle hover effect */
+  transition: transform 0.2s;
+}
+
+/* Change link color on hover */
+a:hover {
+  color: #00b359; /* New link color on hover */
+}
+
+/* Add a hover effect to scale the link slightly */
+a:hover {
+  transform: scale(1.05); /* Scale the link by 5% on hover */
+}
 
   /* Center the content within the footer */
 
@@ -577,7 +608,7 @@ table {
 
   .copyright-section {
     opacity: 0.9;
-    padding: 15px 0;
+    padding: 4px 0;
     font-size: 11px;
     letter-spacing: 0.5px;
     border-top: 1px solid rgba(255, 255, 255, .06);
