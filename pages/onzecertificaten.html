@@ -12,29 +12,49 @@
     pictogrammen, EHBO- Koffers etc.
   </title>
   <link rel="stylesheet" href="../styles.css" />
-  <script src="script.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-        <a class="logo" href="../index.html">
-            <img src="../img/logo.png" alt="Logo" />
-          </a>
-          <ul class="nav-list">
-            <li><a href="onsbedrijf.html">ONS BEDRIJF</a></li>
-          <li><a href="onzediensten.html">ONZE DIENSTEN</a></li>
-          <li><a href="onzeproducten.html">ONZE PRODUCTEN</a></li>
-          <li><a href="nieuws.html">NIEUWS</a></li>
-          <li><a href="offerte.html">OFFERTE</a></li>
-          </ul>
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.png" alt="L ogo" />
+      </a>
+      <div class="mobile-menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenu = document.querySelector(".mobile-menu");
+          const navList = document.querySelector(".nav-list");
+      
+          mobileMenu.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        });
+      </script>
+      <ul class="nav-list">
+        <li class="fade-in"><a href="../pages/onsbedrijf.html">ONS BEDRIJF</a></li>
+        <li class="fade-in"><a href="../pages/onzediensten.html">ONZE DIENSTEN</a></li>
+        <li class="fade-in"><a href="../pages/onzeproducten.html">ONZE PRODUCTEN</a></li>
+        <li class="fade-in"><a href="../pages/nieuws.html">NIEUWS</a></li>
+        <li class="fade-in"><a href="../pages/offerte.html">OFFERTE</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <div class="container">
+      <br><br><br><br>
       <div class="services-container">
+
         <h1>Onze Certificaten</h1>
+
+        
+       
         <p class="text-center">
+          <br><br>
             <a href="http://www.kiwa.nl/gecertificeerde-bedrijven.aspx?keyword=Actief+Brandbeveiliging&amp;normBrl&amp;certNr" target="_blank"><img id="ContentPlaceHolder2_Image20" src="../img/certificates/kiwagecertificeerd.jpg" style="height:254px;width:150px;"></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <img id="ContentPlaceHolder2_Image1" src="../img/certificates/ccvreob.jpg" style="height:257px;width:150px;">

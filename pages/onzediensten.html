@@ -13,30 +13,46 @@
   </title>
   <link rel="stylesheet" href="../styles.css" />
   <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-        <a class="logo" href="../index.html">
-            <img src="../img/logo.png" alt="Logo" />
-          </a>
-          <ul class="nav-list">
-            <li><a href="onsbedrijf.html">ONS BEDRIJF</a></li>
-            <li><a href="onzediensten.html">ONZE DIENSTEN</a></li>
-            <li><a href="onzeproducten.html">ONZE PRODUCTEN</a></li>
-            <li><a href="nieuws.html">NIEUWS</a></li>
-            <li><a href="offerte.html">OFFERTE</a></li>
-          </ul>
+      <a class="logo animate__animated animate__fadeInDown" href="../index.html">
+        <img src="../img/logo.png" alt="L ogo" />
+      </a>
+      <div class="mobile-menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenu = document.querySelector(".mobile-menu");
+          const navList = document.querySelector(".nav-list");
+      
+          mobileMenu.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        });
+      </script>
+      <ul class="nav-list">
+        <li class="fade-in"><a href="../pages/onsbedrijf.html">ONS BEDRIJF</a></li>
+        <li class="fade-in"><a href="../pages/onzediensten.html">ONZE DIENSTEN</a></li>
+        <li class="fade-in"><a href="../pages/onzeproducten.html">ONZE PRODUCTEN</a></li>
+        <li class="fade-in"><a href="../pages/nieuws.html">NIEUWS</a></li>
+        <li class="fade-in"><a href="../pages/offerte.html">OFFERTE</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <section id="services">
-        <div class="container">
+        <div class="container  wow animate__animated animate__zoomIn" data-wow-offset="10" data-wow-delay="0.5s">
           <h1>Ons Diensten</h1>
           <div class="services-container">
             <!-- Service 1 -->
-            <div class="service" data-wow-delay="0.4s">
+            <div class="service">
               <a href="../pages/onderhoudbrandmeldsystemen.html">
                 <img src="../img/services/services1.jpg" alt="Ons Bedrijf">
                 <h2>Onderhoud Brandmeldsystemen

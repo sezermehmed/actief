@@ -18,22 +18,41 @@
 <body>
   <header>
     <nav class="navbar">
-        <a class="logo" href="../index.html">
-            <img src="../img/logo.png" alt="Logo" />
-          </a>
-          <ul class="nav-list">
-            <li><a href="onsbedrijf.html">ONS BEDRIJF</a></li>
-            <li><a href="onzediensten.html">ONZE DIENSTEN</a></li>
-            <li><a href="onzeproducten.html">ONZE PRODUCTEN</a></li>
-            <li><a href="nieuws.html">NIEUWS</a></li>
-            <li><a href="offerte.html">OFFERTE</a></li>
-          </ul>
+      <a class="logo" href="../index.html">
+        <img src="../img/logo.png" alt="L ogo" />
+      </a>
+      <div class="mobile-menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenu = document.querySelector(".mobile-menu");
+          const navList = document.querySelector(".nav-list");
+      
+          mobileMenu.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        });
+      </script>
+      <ul class="nav-list">
+        <li class="fade-in"><a href="../pages/onsbedrijf.html">ONS BEDRIJF</a></li>
+        <li class="fade-in"><a href="../pages/onzediensten.html">ONZE DIENSTEN</a></li>
+        <li class="fade-in"><a href="../pages/onzeproducten.html">ONZE PRODUCTEN</a></li>
+        <li class="fade-in"><a href="../pages/nieuws.html">NIEUWS</a></li>
+        <li class="fade-in"><a href="../pages/offerte.html">OFFERTE</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <div class="container">
+      <br><br><br>
       <div class="services-container">
+        <br><br><br>
         <h1>Milieu & Duurzaamheid</h1>
+        <br><br><br>
+<br>
         <p>
             Er is (gelukkig) geen vaste marketingformule die onveranderd geldig blijft. Ondernemen is geen statische bezigheid, maar een dynamisch en creatief proces wat continu aan verandering onderhevig is. Wanneer we in vogelvlucht kijken naar de ontwikkeling van ondernemersstijlen zien we in de 20e eeuw een verschuiving van een fabrikant- en produktgeoriënteerde naar een markt- en klantgeoriënteerde benadering. In onze moderne 21e-eeuwse informatiesamenleving volgen de veranderingen elkaar in een hoger tempo op en ligt de nadruk steeds meer op mens, milieu, duurzaamheid en communicatie.
             <br><br>

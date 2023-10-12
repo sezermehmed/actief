@@ -19,14 +19,29 @@
   <header>
     <nav class="navbar">
       <a class="logo" href="../index.html">
-        <img src="../img/logo.png" alt="Logo" />
+        <img src="../img/logo.png" alt="L ogo" />
       </a>
+      <div class="mobile-menu">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenu = document.querySelector(".mobile-menu");
+          const navList = document.querySelector(".nav-list");
+      
+          mobileMenu.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        });
+      </script>
       <ul class="nav-list">
-        <li><a href="onsbedrijf.html">ONS BEDRIJF</a></li>
-        <li><a href="onzediensten.html">ONZE DIENSTEN</a></li>
-        <li><a href="onzeproducten.html">ONZE PRODUCTEN</a></li>
-        <li><a href="nieuws.html">NIEUWS</a></li>
-        <li><a href="offerte.html">OFFERTE</a></li>
+        <li class="fade-in"><a href="../pages/onsbedrijf.html">ONS BEDRIJF</a></li>
+        <li class="fade-in"><a href="../pages/onzediensten.html">ONZE DIENSTEN</a></li>
+        <li class="fade-in"><a href="../pages/onzeproducten.html">ONZE PRODUCTEN</a></li>
+        <li class="fade-in"><a href="../pages/nieuws.html">NIEUWS</a></li>
+        <li class="fade-in"><a href="../pages/offerte.html">OFFERTE</a></li>
       </ul>
     </nav>
   </header>

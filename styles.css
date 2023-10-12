@@ -1,164 +1,192 @@
-/* Reset some default styles */
+  /* Reset some default styles */
+
+ /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styles for the body */
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
-html,
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-/* Header styles */
+
 /* Header styles */
 header {
   background-color: #ffffff;
   color: #202020;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-weight: bold;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding: 20px 0;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 1000;
 }
-/* Style for social network icons */
-.social-network {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.social-network li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-network a {
-  display: inline-block;
-  font-size: 24px; /* Adjust the font size as needed */
-  width: 40px;
-  height: 40px;
+/* Style all headings (h1, h2, h3) */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  margin: 20px 0;
   text-align: center;
-  line-height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);/* Change to your desired background color */
-  color: #fff; /* Change to your desired text color */
-  border-radius: 50%;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.social-network a:hover {
-  background-color: #0056b3; /* Change to your desired hover background color */
-  transform: scale(1.1); /* Add a slight scale effect on hover */
-}
-
-/* Navbar styles */
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1200px;
-}
-
-/* Navigation list styles */
-.nav-list {
-  list-style: none;
-  margin: 20px;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-  display: flex;
-}
-
-/* Individual list item styles */
-.nav-list li {
-  margin-right: 0;
-  margin: 0 0 0 24px;
-  font-size: 18px;
-}
-
-/* Anchor link styles */
-.nav-list a {
-  text-decoration: none;
-  color: #00b359;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s;
-}
+/* Styles for h1 */
 h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-/* Logo styles */
-.logo {
-  margin-right: 18em;
-}
-.logo img {
-  width: auto;
-  height: auto;
-}
-/* Anchor link hover styles */
-.nav-list a:hover {
-  color: #ffd700;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #007bff, #00bfff);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-/* Logo styles */
-
-/* Fonts */
-
-
-/* Main content styles */
-.main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-/* Hamburger menu styles */
-.mobile-menu {
-  display: none; /* Initially hide the hamburger menu */
-  cursor: pointer;
+/* Styles for h3 */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
-.hamburger {
-  width: 30px;
-  height: 3px;
-  background-color: #202020;
-  margin: 6px 0;
-  transition: 0.4s;
-}
 
-@media (max-width: 1023px) {
-  /* Show the hamburger menu on mobile screens */
-  .mobile-menu {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 20px;
-    cursor:pointer;
-    z-index: 999; /* Ensure it's above other content */
+  /* Style for social network icons */
+
+  .social-network {
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
   }
+
+  .social-network li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-network a {
+    display: inline-block;
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(45,
+        45,
+        45,
+        0.5);
+    /* Change to your desired background color */
+    color: #fff;
+    /* Change to your desired text color */
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .social-network a:hover {
+    background-color: #0056b3;
+    /* Change to your desired hover background color */
+    transform: scale(1.1);
+    /* Add a slight scale effect on hover */
+  }
+
+  /* Navbar styles */
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+  }
+
+  /* Navigation list styles */
+
+  .nav-list {
+    list-style: none;
+    /* margin: 20px; */
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    display: flex;
+  }
+
+  /* Individual list item styles */
+
+  .nav-list li {
+    margin-right: 0;
+    margin: 0 0 0 24px;
+    font-size: 18px;
+  }
+
+  /* Anchor link styles */
+
+  .nav-list a {
+    text-decoration: none;
+    color: #00b359;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Logo styles */
+
+  .logo {
+    margin-right: 18em;
+  }
+
+  .logo img {
+    width: auto;
+    height: auto;
+  }
+
+  /* Anchor link hover styles */
+
+  .nav-list a:hover {
+    color: #ffd700;
+  }
+
+  /* Logo styles */
+
+  /* Fonts */
+
+  /* Main content styles */
+
+  .main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Hamburger menu styles */
+
+  .mobile-menu {
+    display: none;
+    /* Initially hide the hamburger menu */
+    cursor: pointer;
+  }
+
   .hamburger {
     width: 30px;
     height: 3px;
@@ -167,251 +195,490 @@ h1 {
     transition: 0.4s;
   }
 
+  @media (max-width: 1023px) {
+    /* Show the hamburger menu on mobile screens */
 
-  /* Rotate and transition the hamburger icon for mobile menu toggle */
-  .mobile-menu.active .hamburger:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    .mobile-menu {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 999;
+      /* Ensure it's above other content */
+    }
+
+    .hamburger {
+      width: 30px;
+      height: 3px;
+      background-color: #202020;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    /* Rotate and transition the hamburger icon for mobile menu toggle */
+
+    .mobile-menu.active .hamburger:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .mobile-menu.active .hamburger:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-menu.active .hamburger:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Show the navigation links when the hamburger menu is active */
+
+    .nav-list {
+      display: none;
+      background-color: #5c5a5a;
+      position: fixed;
+      top: 46px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 1000;
+      transition: left 0.4s ease-in-out;
+    }
+
+    .nav-list.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Style the individual navigation links in the mobile menu */
+
+    .nav-list.active li {
+      margin: 10px 0;
+    }
   }
 
-  .mobile-menu.active .hamburger:nth-child(2) {
-    opacity: 0;
+  /* Frame (Background Image) */
+
+  .frame {
+    background-image: url("img/srollbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-origin: border-box;
+    text-align: center;
+    height: 69vh;
+    width: auto;
+    /* Double the width to create the endless effect */
+    position: relative;
+    animation: slideShow 18s linear infinite;
+    overflow: hidden;
   }
 
-  .mobile-menu.active .hamburger:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  /* Show the navigation links when the hamburger menu is active */
-  .nav-list {
-    display: none;
-    background-color: #5c5a5a;
-    position: fixed;
-    top: 46px;
+  /* Overlay for Frame */
+
+  .frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1000;
-    transition: left 0.4s ease-in-out;
-
+    width: 200%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Overlay color */
   }
 
-  .nav-list.active {
+  .background {
+    background-image: url("img/srollbg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-origin: border-box;
+    text-align: center;
+    height: 69vh;
+    width: auto;
+    /* Double the width to create the endless effect */
+    position: absolute;
+    animation: slideShow 20s linear infinite;
+  }
+
+  @keyframes slideShow {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+      /* Adjust the percentage for the desired sliding distance */
+    }
+  }
+
+  /* Info section */
+
+  .info {
+    backface-visibility: visible;
+    color: #ffffff;
+    /* Text color for the content */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .row {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  /* Style the section */
+
+  /* Style the section */
+
+  #services {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 132px 0;
+  }
+
+  /* Style the container */
+
+  .container {
+    ax-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    padding: 0rem 0rem 0rem 0rem;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
     align-items: center;
-
   }
 
-  /* Style the individual navigation links in the mobile menu */
-  .nav-list.active li {
-    margin: 10px 0;
+  /* Style the description paragraph */
+
+  .description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
   }
 
-
-}
-/* Frame (Background Image) */
-.frame {
-  background-image: url("img/srollbg.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: repeat;
-  background-origin: border-box;
-  text-align: center;
-  height: 69vh;
-  width: auto; /* Double the width to create the endless effect */
-  position: relative;
-  animation: slideShow 18s linear infinite;
-  overflow: hidden;
-}
-
-/* Overlay for Frame */
-.frame::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Overlay color */
-}
-.background {
-  background-image: url("img/srollbg.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: repeat;
-  background-origin: border-box;
-  text-align: center;
-  height: 69vh;
-  width: auto; /* Double the width to create the endless effect */
-  position: absolute;
-  animation: slideShow 20s linear infinite;
-}
-
-@keyframes slideShow {
-  0% {
-    transform: translateX(0%);
+  .description a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
   }
 
-  100% {
-    transform: translateX(
-      -50%
-    ); /* Adjust the percentage for the desired sliding distance */
+  /* Create a container for services */
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: 5rem; */
+    padding-top: 5rem;
   }
+  .services-container p {
+    text-align: justify;
 }
+  /* Style each service */
 
-/* Info section */
-.info {
-  backface-visibility: visible;
-  color: #ffffff; /* Text color for the content */
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  text-align: center;
-}
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-/* Style the section */
-/* Style the section */
-#services {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 50px 0;
-}
-
-/* Style the container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Style the description paragraph */
-.description p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.description a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Create a container for services */
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-
-/* Style each service */
-.service {
-  flex: 0 0 calc(41.3333% - 13%); /* Adjust the width to fit 3 services in a row with spacing */
-  margin-bottom: 30px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 0px;
-  border-radius: 11px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.service:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.service a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.service img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0px 0px;
-  min-width: 100%;
-}
-
-.service h2 {
-  font-size: 110%;
-  margin-top: 11px;
-  margin-bottom: 13px;
-  color: #333;
-  transition: color 0.3s ease-in-out;
-}
-
-.service:hover h2 {
-  color: #007bff;
-}
-
-/* Add responsive styles for smaller screens */
-@media (max-width: 768px) {
   .service {
-    flex-basis: calc(
-      50% - 20px
-    ); /* Adjust the width for 2 services in a row on smaller screens */
+    flex: 0 0 calc(41.3333% - 13%);
+    /* Adjust the width to fit 3 services in a row with spacing */
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0px;
+    border-radius: 11px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
-}
 
-/* Footer styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
+  .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  .service a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.footer-content {
-  flex-direction: column; /* Stack items vertically on smaller screens */
-  text-align: center;
-}
+  .service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
 
-.footer-logo img {
-  max-width: 80%; /* Adjust the max-width for the logo on smaller screens */
-}
+  .service h2 {
+    font-size: 110%;
+    margin-top: 11px;
+    margin-bottom: 13px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
 
-.footer-links ul {
-  padding: 0;
-  text-align: center; /* Center-align the links on smaller screens */
-}
+  .service:hover h2 {
+    color: #007bff;
+  }
 
-.footer-social {
-  margin-top: 20px; /* Add spacing at the top on smaller screens */
-}
+  /* Add responsive styles for smaller screens */
 
-.footer-links li {
-  margin-bottom: 10px;
-}
+  @media (max-width: 768px) {
+    .service {
+      flex-basis: calc(50% - 20px);
+      /* Adjust the width for 2 services in a row on smaller screens */
+    }
+  }
 
-.footer-links a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
+  /* FORM */
 
-.footer-social a {
-  margin-right: 15px;
-}
+  /* Contact Form Styles */
 
-.footer-social img {
-  max-width: 30px;
-}
+  .contact-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
+  .contact-name {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .contact-name:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+  }
+
+  textarea:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  /* Submit Button Styles */
+
+  .btn-common {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-common:hover {
+    background-color: #0056b3;
+  }
+
+  /* Error Label Styles */
+
+  #ContentPlaceHolder2_errorLabel {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Styling for the Info Section */
+
+  .icons-list li {
+    font-size: 14px;
+    list-style: none;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  /* Styling for the Address & Contact Gegevens Section */
+
+  .column-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  /* Styling for the Openingstijden Section */
+
+  .list-unstyled li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* Styling for the Google Map Section */
+
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-header p {
+    text-align: justify;
 }
+form.gform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: baseline;
+}
+table {
+  text-align: initial;
+}
+  /* Footer container styles */
+
+  .footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+  }
+
+  /* Center the content within the footer */
+
+  .container {
+    max-width: 1200px;
+  }
+
+  /* Copyright section styles */
+
+  .copyright-section {
+    opacity: 0.9;
+    padding: 15px 0;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    border-top: 1px solid rgba(255, 255, 255, .06);
+  }
+
+  /* Copyright text styles */
+
+  .copyright-section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Footer navigation styles */
+
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .footer-nav a:hover {
+    color: #00b359;
+    /* Highlight color on hover */
+  }
+
+  /* Center the disclaimer container */
+
+  .disclaimer-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    max-width: 940px;
+    /* Adjust the maximum width as needed */
+    padding: 20px;
+    text-align: left;
+    /* Align all lines to the left */
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+
+  /* Style the headers */
+
+  .disclaimer-container b {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* Style the list items with icons */
+
+  .disclaimer-container ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .disclaimer-container ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .disclaimer-container ul li::before {
+    content: "\2022";
+    /* Bullet character */
+    color: #007bff;
+    position: absolute;
+    left: 0;
+  }
+
+  /* Style lines starting with numbers */
+
+  .disclaimer-container p {
+    text-indent: 0;
+    /* Remove default text indentation */
+  }
+
+  .disclaimer-container p::first-line {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  /* Style links */
+
+  .disclaimer-container a {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid #007bff;
+    transition: border-bottom 0.3s;
+  }
+
+  .disclaimer-container a:hover {
+    border-bottom: 2px solid #007bff;
+  }

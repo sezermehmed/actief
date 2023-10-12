@@ -13,31 +13,48 @@
   </title>
   <link rel="stylesheet" href="../styles.css" />
   <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-        <a class="logo" href="../index.html">
-            <img src="../img/logo.png" alt="Logo" />
+    <header>
+        <nav class="navbar ">
+          <a class="logo animate__animated animate__fadeInDown" href="../index.html">
+            <img src="../img/logo.png" alt="L ogo" />
           </a>
+          <div class="mobile-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const mobileMenu = document.querySelector(".mobile-menu");
+              const navList = document.querySelector(".nav-list");
+          
+              mobileMenu.addEventListener("click", function () {
+                navList.classList.toggle("active");
+              });
+            });
+          </script>
           <ul class="nav-list">
-            <li><a href="onsbedrijf.html">ONS BEDRIJF</a></li>
-            <li><a href="onzediensten.html">ONZE DIENSTEN</a></li>
-            <li><a href="onzeproducten.html">ONZE PRODUCTEN</a></li>
-            <li><a href="nieuws.html">NIEUWS</a></li>
-            <li><a href="offerte.html">OFFERTE</a></li>
+            <li class="fade-in"><a href="../pages/onsbedrijf.html">ONS BEDRIJF</a></li>
+            <li class="fade-in"><a href="../pages/onzediensten.html">ONZE DIENSTEN</a></li>
+            <li class="fade-in"><a href="../pages/onzeproducten.html">ONZE PRODUCTEN</a></li>
+            <li class="fade-in"><a href="../pages/nieuws.html">NIEUWS</a></li>
+            <li class="fade-in"><a href="../pages/offerte.html">OFFERTE</a></li>
           </ul>
-    </nav>
-  </header>
+        </nav>
+      </header>
   <main>
     <section id="services">
-        <div class="container">
+        <div class="container wow animate__animated animate__zoomIn" data-wow-offset="10" data-wow-delay="0.5s">
           <h1>Ons Diensten</h1>
-          <div class="row text-center">
+          <div class="services-container">
             <!-- Box-1 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                    <a href="products/brandblussers.html"><img id="ContentPlaceHolder2_Image7" class="img-responsive" src="../img/products/brandblussers.jpg " style="height:200px;width:192px;"></a>
                    </div>
@@ -53,7 +70,7 @@
            <!-- ./Box-1 -->
            <!-- Box-2 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                    <a href="products/brandslanghaspels.html"><img id="ContentPlaceHolder2_Image8" class="img-responsive" src="../img/products/brandlangshaspel.jpg" align="absmiddle" style="height:200px;width:200px;"></a>
                    </div>
@@ -69,7 +86,7 @@
            <!--./Box-2 -->
            <!-- Box-3 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn  animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                    <a href="products/brandmelders.html"><img id="ContentPlaceHolder2_Image9" class="img-responsive" src="../img/products/brandmelders.jpg" style="height:200px;width:224px;"></a>
                    </div>
@@ -85,7 +102,7 @@
            <!-- ./Box-3 -->
            <!-- Box-4 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn  animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                        <a href="products/blusdekens.html"><img id="ContentPlaceHolder2_Image10" class="img-responsive" src="../img/products/blusdeken.jpg" style="height:200px;width:299px;"></a>
                    </div>
@@ -101,7 +118,7 @@
            <!-- ./Box-4 -->
            <!-- Box-4 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn  animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                        <a href="products/ehbokoffers.html"><img id="ContentPlaceHolder2_Image11" class="img-responsive" src="../img/products/ehbokoffers.jpg" style="height:200px;width:192px;"></a>
                    </div>
@@ -117,7 +134,7 @@
            <!-- ./Box-4 -->
            <!-- Box-4 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn  animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                        <a href="products/noodverlichtingen.html"><img id="ContentPlaceHolder2_Image12" class="img-responsive" src="../img/products/verlichting.jpg" style="height:200px;width:291px;"></a>
                    </div>
@@ -133,7 +150,7 @@
            <!-- ./Box-4 -->
            <!-- Box-4 -->
            <div class="col-sm-4 col-md-4 service" data-wow-delay="0.1s">
-               <div class="service-content wow zoomIn  animated animated" style="visibility: visible;">
+               <div class="service-content wow animate__animated animate__zoomIn" style="visibility: visible;">
                    <div>
                        <a href="products/pictogrammen.html"><img id="ContentPlaceHolder2_Image13" class="img-responsive" src="../img/products/pictogrammen.jpg" style="height:200px;width:263px;"></a>
                    </div>

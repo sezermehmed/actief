@@ -18,18 +18,33 @@
 <body>
     <header>
         <nav class="navbar">
-            <a class="logo" href="../index.html">
-                <img src="../../img/logo.png" alt="Logo" />
-            </a>
-            <ul class="nav-list">
-                <li><a href="../onsbedrijf.html">ONS BEDRIJF</a></li>
-                <li><a href="../onzediensten.html">ONZE DIENSTEN</a></li>
-                <li><a href="../onzeproducten.html">ONZE PRODUCTEN</a></li>
-                <li><a href="../nieuws.html">NIEUWS</a></li>
-                <li><a href="../offerte.html">OFFERTE</a></li>
-            </ul>
+          <a class="logo" href="../../index.html">
+            <img src="../../img/logo.png" alt="L ogo" />
+          </a>
+          <div class="mobile-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+          </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const mobileMenu = document.querySelector(".mobile-menu");
+              const navList = document.querySelector(".nav-list");
+          
+              mobileMenu.addEventListener("click", function () {
+                navList.classList.toggle("active");
+              });
+            });
+          </script>
+          <ul class="nav-list">
+            <li class="fade-in"><a href="../onsbedrijf.html">ONS BEDRIJF</a></li>
+            <li class="fade-in"><a href="../onzediensten.html">ONZE DIENSTEN</a></li>
+            <li class="fade-in"><a href="../onzeproducten.html">ONZE PRODUCTEN</a></li>
+            <li class="fade-in"><a href="../nieuws.html">NIEUWS</a></li>
+            <li class="fade-in"><a href="../offerte.html">OFFERTE</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <div class="container">
             <div class="services-container">
@@ -44,7 +59,7 @@
                         </div>
                         <!-- ./ Heading Style -->
                                 <p>
-                                <img id="ContentPlaceHolder2_Image1" src="assets/img/products/bhvkoffers.jpg" style="height:86px;width:138px;"><br><br>
+                                <img id="ContentPlaceHolder2_Image1" src="../../img/products/bhvkoffers.jpg" style="height:86px;width:138px;"><br><br>
                                 In Nederland lopen gemiddeld 280.000 mensen per jaar letsel op als gevolg van een arbeidsongeval. De aanwezigheid van goede bedrijfsverbandkoffers is essentieel. Het Oranje Kruis, de organisatie die EHBO-diploma’s verzorgt en lesmaterialen samenstelt, heeft richtlijnen opgesteld voor de inhoud van de verbandkoffer. Daarbij is rekening gehouden met de basistaken van de bedrijfshulpverlener. Uitgangspunt is dat de verbandkoffer doeltreffend, veilig, doelmatig en gebruiksvriendelijk is. De koffer moet volgens het Oranje Kruis binnen een halve minuut te bereiken zijn. Daardoor kunnen er meer koffers in een bedrijf nodig zijn. Deze aanbevelingen zijn een aanvulling op de minimale bepalingen in de Arbowet.
                                 </p>
                     </div>
