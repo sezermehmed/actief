@@ -18,7 +18,8 @@ body {
   /* height: 100vh; */
   /* overflow: hidden; */
   margin: 0;
-  width: 100%;
+  width: device-width ;
+  zoom: 1.0 ;
 }
 
 /* Header styles */
