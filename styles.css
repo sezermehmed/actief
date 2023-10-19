@@ -3,12 +3,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Basic styles for the body */
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   line-height: 1.6;
+  background-color: #ecf0f1;
+  font-family: 'Roboto', sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin: 0;
+  width: auto;
 }
 
 /* Header styles */
