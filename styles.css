@@ -20,6 +20,8 @@ body {
   margin: 0;
   width: device-width ;
   zoom: 1.0 ;
+  width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header styles */
