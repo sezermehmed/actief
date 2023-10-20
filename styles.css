@@ -166,7 +166,7 @@ h1 {
 
 /* Main content styles */
 .main {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 20px auto;
   padding: 20px;
   background-color: #ffffff;
