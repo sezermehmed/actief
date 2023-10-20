@@ -64,92 +64,134 @@
 
 
                 <form class="gform pure-form pure-form-stacked" method="POST" data-email="sezermehmed98@gmail.com"
-                  action="https://script.google.com/macros/s/AKfycbx9h-pTk0A5IkAypJm1zOo0gS1fH5qtnDhfGCk8PElZJrbsBdLuej11GHdUheePJfBT/exec">
+                  action="https://script.google.com/macros/s/AKfycbzLCMWgUnbYu9bGhvxrW6GkYJLVcTk6U01JlTIL6e85StihHlKlmBIgGBJDVQZZ1TyZ/exec">
                   <!-- <div id="contactUpdatePanel"> -->
 
 
-                  <b>Bedrijfsnaam (*):</b><input name="companyTextbox" type="text"
-                    id="companyTextbox" class="contact-name form-control" style="width:600px;">
+                  <b>Bedrijfsnaam (*):</b><input name="company" type="text" id="company"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <b>Uw Naam (*):</b><input name="firstnameTextbox" type="text"
-                    id="firstnameTextbox" class="contact-name form-control" style="width:600px;">
+                  <b>Uw Naam (*):</b><input name="firstname" type="text" id="firstname"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <b>Uw Achternaam (*):</b><input name="lastnameTextbox" type="text"
-                    id="lastnameTextbox" class="contact-name form-control" style="width:600px;">
+                  <b>Uw Achternaam (*):</b><input name="lastname" type="text" id="lastname"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <b>Uw Email Adres (*):</b><input name="emailaddressTextbox" type="text"
-                    id="emailaddressTextbox" class="contact-name form-control" style="width:600px;">
+                  <b>Uw Email Adres (*):</b><input name="emailaddress" type="text" id="emailaddress"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <b>Uw Telefoonnummer (*):</b><input name="phonenumberTextbox" type="text"
-                    id="phonenumberTextbox" class="contact-name form-control" style="width:600px;">
+                  <b>Uw Telefoonnummer (*):</b><input name="phonenumber" type="text" id="phonenumber"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <b>Uw Adres, Postcode, Plaats (*):</b><input name="addressTextbox"
-                    type="text" id="addressTextbox" class="contact-name form-control"
-                    style="width:600px;">
+                  <b>Uw Adres, Postcode, Plaats (*):</b><input name="address" type="text" id="address"
+                    class="contact-name form-control" style="width:600px;">
                   <br>
-                  <span id="getinformationLabel">Ik wil graag meer informatie over (*):</span>
-                  <br>
-                  <table style="width:100%">
-                    <!-- <tr>
-                        <td><span style="font-style:normal;"><input id="onderhoudbrandmeldsystemenCheckbox" type="checkbox" name="onderhoudbrandmeldsystemenCheckbox" /><label for="onderhoudbrandmeldsystemenCheckbox">Onderhoud Brandmeldsystemen</label></span></td>
-                        <td><span style="font-style:normal;"><input id="brandblussersCheckbox" type="checkbox" name="brandblussersCheckbox" /><label for="brandblussersCheckbox">Brandblussers</label></span></td> 
-                      </tr>
-                      <tr>
-                        <td><span style="font-style:normal;"><input id="onderhoudkleineblusmiddelenCheckbox" type="checkbox" name="onderhoudkleineblusmiddelenCheckbox" /><label for="onderhoudkleineblusmiddelenCheckbox">Onderhoud Kleineblusmiddelen</label></span></td>
-                        <td><span style="font-style:normal;"><input id="brandslanghaspelsCheckbox" type="checkbox" name="brandslanghaspelsCheckbox" /><label for="brandslanghaspelsCheckbox">Brandslanghaspels</label></span></td> 
-                      </tr>
-                      <tr>
-                        <td><span style="font-style:normal;"><input id="onderhoudnoodverlichtingCheckbox" type="checkbox" name="onderhoudnoodverlichtingCheckbox" /><label for="onderhoudnoodverlichtingCheckbox">Onderhoud Noodverlichting</label></span></td>
-                        <td><span style="font-style:normal;"><input id="brandmeldersCheckbox" type="checkbox" name="brandmeldersCheckbox" /><label for="brandmeldersCheckbox">Brandmelders</label></span></td>
-                      </tr>
-                      <tr>
-                        <td><span style="font-style:normal;"><input id="bhvtrainingenCheckbox" type="checkbox" name="bhvtrainingenCheckbox" /><label for="bhvtrainingenCheckbox">BHV Trainingen</label></span></td>
-                        <td><span style="font-style:normal;"><input id="blusdekensCheckbox" type="checkbox" name="blusdekensCheckbox" /><label for="blusdekensCheckbox">Blusdekens</label></span></td>
-                      </tr>
-                      <tr>
-                        <td><span style="font-style:normal;"><input id="ehbokoffersCheckbox" type="checkbox" name="ehbokoffersCheckbox" /><label for="ehbokoffersCheckbox">EHBO-Koffers</label></span></td>
-                        <td><span style="font-style:normal;"><input id="noodverlichtingenCheckbox" type="checkbox" name="noodverlichtingenCheckbox" /><label for="noodverlichtingenCheckbox">Noodverlichtingen</label></span></td>
-                      </tr> -->
-                      <label for="option1">kablo</label>
-                      <input type="checkbox" id="onderhoudbrandmeldsystemen" name="onderhoudbrandmeldsystemen" value="">
-                  
-                      <label for="option2">hortum</label>
-                      <input type="checkbox" id="brandblussers" name="brandblussers" value="">
-                  
-                      <label for="option3">tup</label>
-                      <input type="checkbox" id="brandmelders" name="brandmelders" value="">
+                  <span id="getinformationLabel">Ik wil graag meer informatie over (*):
+                    <br>
+                    <table style="width:100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <fieldset class="pure-group">
+                              <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Onderhoud Brandmeldsystemen" />
+                              <label for="checkbox">Onderhoud Brandmeldsystemen</label>
 
+                            </fieldset>
+                          </td>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Brandblussers" /> <label for="checkbox">Brandblussers</label>
+                            </fieldset>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Onderhoud Kleineblusmiddelen" />
+                              <label for="checkbox">Onderhoud Kleineblusmiddelen</label>
+                            </fieldset>
+                          </td>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Brandslanghaspels" />
+                              <label for="checkbox">Brandslanghaspels</label>
+                            </fieldset>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Onderhoud Noodverlichting" />
+                              <label for="checkbox">Onderhoud Noodverlichting</label>
+                            </fieldset>
+                          </td>
+                          <td>
+                            <fieldset class="pure-group"><input id="checkbox" type="checkbox" name="checkbox"
+                                value="Brandmelders" />
+                              <label for="checkbox">Brandmelders</label>
+                            </fieldset>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <fieldset class="pure-group"><input id="checkbox" type="checkbox" name="checkbox"
+                                value="BHV Trainingen" />
+                              <label for="checkbox">BHV Trainingen</label>
+                            </fieldset>
+                          </td>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="Blusdekens" />
+                              <label for="checkbox">Blusdekens</label>
+                            </fieldset>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <fieldset class="pure-group"> <input id="checkbox" type="checkbox" name="checkbox"
+                                value="EHBO-Koffers" />
+                              <label for="checkbox">EHBO-Koffers</label>
+                            </fieldset>
+                          </td>
+                          <td>
+                            <fieldset class="pure-group"><input id="checkbox" type="checkbox" name="checkbox"
+                                value="Noodverlichtingen" />
+                              <label for="checkbox">Noodverlichtingen</label>
+                            </fieldset>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
-                  <br>
-                  <b>Uw Bericht (*):</b><textarea name="messageTextbox" rows="5" cols="20"
-                    id="messageTextbox" class="contact-name form-control"
-                    style="width:600px;"></textarea>
-                  <br>
-                  <span id="errorLabel"></span>
-                  <br>
 
-                  <div id="contactUpdateProgress" style="display:none;">
+                    <br>
+                    <b>Uw Bericht (*):</b><textarea name="message" rows="5" cols="20" id="message"
+                      class="contact-name form-control" style="width:600px;"></textarea>
+                    <br>
+                    <span id="errorLabel">
+                      <br>
 
-                    <img id="progressImage" src="assets/img/login/progress.gif"
-                      style="height:25px;width:25px;">
+                      <div id="contactUpdateProgress" style="display:none;">
 
-                  </div>
-                  <input type="submit" name="sendButton" value="Send"
-                    id="sendButton" class="btn btn-common" style="width:600px;">
+                        <img id="progressImage" src="assets/img/login/progress.gif" style="height:25px;width:25px;">
+
+                      </div>
+                      <input type="submit" name="sendButton" value="Send" id="sendButton" class="btn btn-common"
+                        style="width:600px;">
 
 
-                  <!-- </div> -->
+                      <!-- </div> -->
 
 
                 </form>
-                <script data-cfasync="false" type="text/javascript" src="../form-submission-handler.js"></script>
+
               </div>
             </div>
           </div>
           <div class="col-md-4" style="float: right; margin: 4rem; text-align: initial; ">
 
             <h4 class="column-title">
-              <span class="fa fa-globe"></span> Adres &amp; Contact Gegevens
+              <span class="fa fa-globe"> Adres &amp; Contact Gegevens
             </h4>
 
             <p></p>
@@ -169,7 +211,7 @@
             <div style="margin-bottom: 30px"></div>
             <!-- Classic Heading -->
             <h4 class="column-title">
-              <span>Openingstijden:</span>
+              Openingstijden:
             </h4>
             <!-- Info - List -->
             <ul class="list-unstyled">
@@ -211,7 +253,7 @@
             <div class="footer-widget twitter-widget wow zoomIn animated animated" data-wow-offset="10"
               data-wow-delay="0.5s"
               style="visibility: visible;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-              <h4> <i class="fab fa-facebook"></i> Facebook Feed<span class="head-line"></span></h4>
+              <h4> <i class="fab fa-facebook"></i> Facebook Feed<span class="head-line"></h4>
               <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/Brandveilig"
                 data-tabs="timeline" data-height="300" data-small-header="false" data-adapt-container-width="true"
                 data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered"
@@ -221,13 +263,13 @@
                     title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true"
                     allowfullscreen="true" scrolling="no" allow="encrypted-media"
                     src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df73aca36cbad48%26domain%3Dwww.actiefbrandbeveiliging.nl%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252Fwww.actiefbrandbeveiliging.nl%252Ff3daa832ba34954%26relation%3Dparent.parent&amp;container_width=263&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FBrandveilig&amp;locale=en_GB&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"
-                    style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span>
+                    style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe>
               </div>
             </div>
           </div>
           <div class="col-md-3 col-xs-12">
             <div>
-              <h4><i class="fa fa-twitter"></i> Twitter Feed<span class="head-line"></span></h4>
+              <h4><i class="fa fa-twitter"></i> Twitter Feed<span class="head-line"></h4>
               <a class="twitter-timeline" href="https://twitter.com/actief040" data-widget-id="691032508859858945"
                 data-twitter-extracted-i169707629838911785="true">Tweets door @actief040</a>
             </div>
@@ -236,7 +278,7 @@
             <div class="footer-widget twitter-widget wow zoomIn animated animated" data-wow-offset="10"
               data-wow-delay="0.5s"
               style="visibility: visible;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-              <h4> <i class="fab fa-linkedin"></i> LinkedIn Feed<span class="head-line"></span></h4>
+              <h4> <i class="fab fa-linkedin"></i> LinkedIn Feed<span class="head-line"></h4>
               <a href="https://www.linkedin.com/company/actief-brandbeveiliging">LinkedIn</a>
               </script>
               <script type="IN/CompanyProfile" data-id="1816092" data-format="inline">
