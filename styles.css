@@ -365,6 +365,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 2rem; /* Adjust as needed */
+    flex-direction: column;
   }
 }
 .service {
