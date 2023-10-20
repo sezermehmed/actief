@@ -7,7 +7,7 @@
 }
 
 /* Basic styles for the body */
-body {
+html body {
   /* font-family: Arial, sans-serif; */
   line-height: 1.6;
   background-color: #ecf0f1;
