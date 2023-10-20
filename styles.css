@@ -18,7 +18,7 @@ html body {
   /* height: 100vh; */
   /* overflow: hidden; */
   margin: 0;
-  width: device-width ;
+  max-width: 100% ;
   zoom: 1.0 ;
   width: 100%;
     overflow-x: hidden;
