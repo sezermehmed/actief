@@ -699,6 +699,30 @@ input[type="checkbox"]:checked {
     width: auto;
   }
 }
+/* Apply mobile-responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  .col-md-8 {
+    width: 100%;
+    float: none;
+  }
+
+  .contact-name {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .pure-group label {
+    display: block;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  #sendButton {
+    width: 100%;
+  }
+}
 
 
 .row img {
