@@ -249,7 +249,7 @@ h1 {
 /* Frame (Background Image) */
 .frame {
   background-image: url("img/srollbg.jpg");
-  background-size: 2250px auto;
+  /* background-size: 2250px auto; */
   background-position: center bottom;
   background-repeat: repeat;
   background-origin: border-box;
