@@ -22,6 +22,7 @@ html body {
   zoom: 1.0 ;
   width: 100%;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Header styles */
@@ -249,13 +250,13 @@ h1 {
 /* Frame (Background Image) */
 .frame {
   background-image: url("img/srollbg.jpg");
-  /* background-size: 2250px auto; */
+  background-size: 2250px auto;
   background-position: center bottom;
   background-repeat: repeat;
   background-origin: border-box;
   text-align: center;
   height: 69vh;
-  width: 6750px;
+  /* width: 6750px; */
   position: relative;
   animation: slideShow 70s linear infinite;
   overflow: hidden;
@@ -304,7 +305,7 @@ h1 {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 
