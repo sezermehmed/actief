@@ -12,17 +12,12 @@ html body {
   line-height: 1.6;
   background-color: #ecf0f1;
   font-family: 'Roboto', sans-serif;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* height: 100vh; */
-  /* overflow: hidden; */
+
   margin: 0;
   max-width: 100% ;
   zoom: 1.0 ;
   width: 100%;
-    overflow-x: hidden;
-    overflow: hidden;
+
 }
 
 /* Header styles */
@@ -246,8 +241,32 @@ h1 {
     margin: 10px 0;
   }
 }
-.main-frame {
-  max-width: 100%;
+.slide-show {
+  margin: 0px;
+    border: 3px none #000000;
+    -moz-animation: wrapper 3s forwards;
+    -webkit-animation: wrapper 3s forwards;
+    -ms-animation: wrapper 3s forwards;
+    animation: wrapper 3s forwards;
+    height: 640px;
+    left: 0;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.overlay {
+  margin: 0px;
+  padding: 0px;
+  left: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  z-index: 100;
 }
 .tech-slideshow {
   height: 900px;
@@ -263,11 +282,12 @@ h1 {
 .tech-slideshow > div {
   height: 900px;
   width: 6526px;
-  background: url("img/srollbg.jpg");
+  background: url(img/srollbg.jpg);
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 600px;
+  top: -171px;
+  left: 0px;
+  height: 811px;
+  background-size: 2291px auto;
   transform: translate3d(0, 0, 0);
 }
 .tech-slideshow .mover-1 {
@@ -329,11 +349,12 @@ h1 {
   backface-visibility: visible;
   color: #ffffff;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* padding: 20px; */
   text-align: center;
+  z-index: 101;
 }
 
 .row {
