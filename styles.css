@@ -643,7 +643,7 @@ form.gform {
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: center;
-  align-items: baseline;
+  align-items: initial;
 }
 table {
   width: 100%;
@@ -656,7 +656,7 @@ table {
 tr,
 td {
   border: 1px solid rgb(253, 253, 253);
-  /* padding: 5px; */
+  padding: -1px 0 0 27px;
   border: none;
   border-bottom: none;
 }
@@ -667,16 +667,7 @@ th {
   float: left;
   
 }
-tr:hover {
-  background-color: #ffffff;
-}
-tr:nth-child(even) {
-  background-color: #fff;
-}
 
-tr:nth-child(odd) {
-  background-color: #ffffff;
-}
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
@@ -720,8 +711,10 @@ input[type="checkbox"]:checked {
 @media (max-width: 768px) {
   .col-md-8,
   .col-md-4 {
-    width: 100%;
+    width: 80%;
     float: none;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 
   .contact-name {
