@@ -249,6 +249,7 @@ h1 {
 
 /* Frame (Background Image) */
 .frame {
+  /* Desktop styles */
   background-image: url("img/srollbg.jpg");
   background-size: 2250px auto;
   background-position: center bottom;
@@ -256,12 +257,23 @@ h1 {
   background-origin: border-box;
   text-align: center;
   height: 69vh;
-  /* width: 6750px; */
+  width: 6750px;
   position: relative;
   animation: slideShow 70s linear infinite;
   overflow: hidden;
-}
 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .frame {
+    width: 100%;
+  }
+}
 /* Overlay for Frame */
 .frame::before {
   content: "";
