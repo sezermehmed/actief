@@ -246,32 +246,46 @@ h1 {
     margin: 10px 0;
   }
 }
-
-/* Frame (Background Image) */
-.frame {
-  /* Desktop styles */
-  background-image: url("img/srollbg.jpg");
-  background-size: 2250px auto;
-  background-position: center bottom;
-  background-repeat: repeat;
-  background-origin: border-box;
-  text-align: center;
-  height: 69vh;
-  width: 6750px;
+.main-frame {
+  max-width: 100%;
+}
+.tech-slideshow {
+  height: 900px;
+  max-width: 100%;
+  margin: 0 auto;
   position: relative;
-  animation: slideShow 70s linear infinite;
   overflow: hidden;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transform: translate3d(0, 0, 0);
+  color: #1a1a1a;
   
 }
-@media (max-width: 768px) {
-  /* Mobile styles */
-  .frame {
-    width: 100%;
+
+.tech-slideshow > div {
+  height: 900px;
+  width: 6526px;
+  background: url("img/srollbg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 72s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 0;
+  animation: moveSlideshow 72s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
   }
 }
 /* Overlay for Frame */
@@ -284,9 +298,10 @@ h1 {
   height: 100%;
   max-width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  transform: translate3d(0,0,0);
 }
 
-.background {
+/* .background {
   background-image: url("img/srollbg.jpg");
   background-size: cover;
   background-position: center bottom;
@@ -297,7 +312,7 @@ h1 {
   width: auto;
   position: absolute;
   animation: slideShow 20s linear infinite;
-}
+} */
 
 @keyframes slideShow {
   0% {
