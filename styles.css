@@ -469,9 +469,9 @@ a.logo.animate__animated.animate__fadeInDown {
 
 /* Contact Form Styles */
 .contact-form {
-  width: auto;
-  max-width: 100%;
-  margin: 0px 0% 0% -15%;
+  width: 116%;
+  max-width: 116%;
+  margin: -8px 6% 0% -15%;
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 10px;
@@ -493,7 +493,7 @@ a.logo.animate__animated.animate__fadeInDown {
   max-width: -webkit-fill-available;
 }
 span#getinformationLabel {
-  max-width: -webkit-fill-available;
+  max-width: 100%;
 }
 .contact-name:focus {
   outline: none;
@@ -709,7 +709,7 @@ input[type="checkbox"]:checked {
 .col-md-4 {
   width: 50%; /* Adjust the width as needed */
   float: left;
-  margin: 0% -8% 0% -10%;
+  /* margin: 0% -8% 0% -10%; */
 }
 
 .contact-name {
