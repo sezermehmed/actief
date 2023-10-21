@@ -700,29 +700,36 @@ input[type="checkbox"]:checked {
   }
 }
 /* Apply mobile-responsive styles for screens up to 768px */
+/* Base Styles for Larger Screens */
+.col-md-8 {
+  width: 60%; /* Adjust the width as needed */
+  float: left;
+}
+
+.col-md-4 {
+  width: 40%; /* Adjust the width as needed */
+  float: left;
+}
+
+.contact-name {
+  width: 100%;
+}
+
+/* Media Query for Smaller Screens (e.g., Mobile) */
 @media (max-width: 768px) {
-  .col-md-8 {
+  .col-md-8,
+  .col-md-4 {
     width: 100%;
     float: none;
   }
 
   .contact-name {
     width: 100%;
-    margin: 5px 0;
   }
 
-  .pure-group label {
-    display: block;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  #sendButton {
-    width: 100%;
-  }
+  /* Adjust other styles for smaller screens here */
 }
+
 
 
 .row img {
