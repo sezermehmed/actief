@@ -494,6 +494,7 @@ a.logo.animate__animated.animate__fadeInDown {
 }
 span#getinformationLabel {
   max-width: 100%;
+  width: 100%;
 }
 .contact-name:focus {
   outline: none;
@@ -643,7 +644,7 @@ form.gform {
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: center;
-  align-items: initial;
+  align-items: baseline;
 }
 table {
   width: 100%;
