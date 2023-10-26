@@ -626,7 +626,7 @@ input[type="checkbox"] {
 
 /* Styling for the Google Map Section */
 iframe {
-  width: 178%;
+  width: 100%;
   height: 300px;
   border: none;
   border-radius: 24px;
@@ -645,6 +645,23 @@ form.gform {
   align-content: stretch;
   justify-content: center;
   align-items: baseline;
+}
+.col-md-4-contact {
+  float: right;
+  text-align: initial;
+  margin: 0% -22% 0% 0%;
+  max-width: 68%;
+  width: 49%;
+}
+@media (max-width: 1430px) {
+.col-md-4-contact {
+  float: left;
+  text-align: initial;
+  margin: 0% -6% 0% 0%;
+  max-width: 60%;
+  width: 76%;
+}
+
 }
 table {
   width: 100%;
