@@ -423,7 +423,7 @@ a.logo.animate__animated.animate__fadeInDown {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 2rem; /* Adjust as needed */
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .service {
