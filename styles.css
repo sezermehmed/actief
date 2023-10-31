@@ -67,8 +67,8 @@ h3 {
 p {
   /* margin: 5px;
   padding: 2%; */
-  /* padding-inline: 7%; */
-  /* padding-inline-end: 11%; */
+  padding-inline: 7%; 
+   padding-inline-end: 11%;
 }
 /* Style for social network icons */
 .social-network {
