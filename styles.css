@@ -12,12 +12,10 @@ html body {
   line-height: 1.6;
   background-color: #f4f3f3;
   font-family: 'Roboto', sans-serif;
-
   margin: 0;
   max-width: 100% ;
   zoom: 1.0 ;
   width: 100%;
-
 }
 
 /* Header styles */
@@ -66,7 +64,9 @@ h3 {
   padding: 10px;
   border: 1px solid #ddd;
 }
-
+p {
+  margin: auto;
+}
 /* Style for social network icons */
 .social-network {
   list-style: none;
