@@ -29,7 +29,7 @@ header {
   font-weight: bold;
   padding: 20px 0;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
@@ -65,9 +65,10 @@ h3 {
   border: 1px solid #ddd;
 }
 p {
-  margin: 5px;
-  padding: 2%;
+  /* margin: 5px;
+  padding: 2%; */
   padding-inline: 7%;
+  padding-inline-end: 11%;
 }
 /* Style for social network icons */
 .social-network {
@@ -146,6 +147,7 @@ h1 {
 /* Logo styles */
 .logo {
   margin-right: 18em;
+  margin-left: 6rem;
 }
 
 .logo img {
