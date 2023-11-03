@@ -761,7 +761,7 @@ input[type="checkbox"]:checked {
 
 
 .row img {
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 /* Footer container styles */
