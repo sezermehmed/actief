@@ -277,7 +277,7 @@ a.logo.animate__animated.animate__fadeInDown {
   z-index: 100;
 }
 .tech-slideshow {
-  height: 900px;
+  height: 760px;
   max-width: 100%;
   margin: 0 auto;
   position: relative;
@@ -416,6 +416,7 @@ a.logo.animate__animated.animate__fadeInDown {
 
 .services-container p {
   text-align: justify;
+ 
 }
 @media (max-width: 768px) {
   .services-container {
@@ -903,4 +904,22 @@ a:hover {
 
 .disclaimer-container a:hover {
   border-bottom: 2px solid #007bff;
+}
+.image-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  width: auto;
+  height: 350px;
+  padding: 1%;
+  padding-left: 8%;
+  padding-right: 9%;
+}
+
+.small-image {
+  height: 225px;
+  width: auto;  
+  margin: 18px;   
 }
