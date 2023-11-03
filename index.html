@@ -26,15 +26,26 @@
       <a class="logo animate__animated animate__fadeInDown" href="index.html">
         <img src="img/logo.png" alt="L ogo" />
       </a>
+      
       <div class="mobile-menu">
         <div class="hamburger"></div>
         <div class="hamburger"></div>
         <div class="hamburger"></div>
+
+          <!-- <div id="music-player" class="music"> -->
+      <!-- <audio id="audio-player" controls autoplay controls volume="0.0" controls autoplay >
+        <source src="CHALET  DAYBREAK.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+       <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>  -->
+    <!-- </div>  -->
+    
       </div>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const mobileMenu = document.querySelector(".mobile-menu");
-          const navList = document.querySelector(".nav-list");
+          const navList = document.querySelector(".nav-list", ".music");
 
           mobileMenu.addEventListener("click", function () {
             navList.classList.toggle("active");
@@ -49,15 +60,7 @@
         <li class="fade-in"><a href="pages/offerte.html">OFFERTE</a></li>
       </ul>
     </nav>
-    <div id="music-player">
-      <audio id="audio-player" controls autoplay controls volume="0.0" controls autoplay >
-        <source src="CHALET  DAYBREAK.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <!-- <button id="play-button">Play</button>
-      <button id="pause-button">Pause</button> -->
-    </div>
-    
+  
     <script>
       const audioPlayer = document.getElementById('audio-player');
       const playButton = document.getElementById('play-button');
