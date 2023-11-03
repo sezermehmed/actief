@@ -489,6 +489,22 @@ a.logo.animate__animated.animate__fadeInDown {
     margin-left: -4%;
   }
 }
+@media (max-width: 500px) {
+  /* Make the contact form container full-width on mobile devices */
+  .contact-form {
+    max-width: 114%;
+    margin-left: -4%;
+    width: 114%;
+  }
+}
+
+@media (max-width: 445px) {
+  .contact-form {
+max-width: 126%;
+margin-left: -13%;
+width: 124%;
+}
+}
 .contact-name {
   width: 100%;
   padding: 8px;
