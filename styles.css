@@ -563,8 +563,9 @@ input[type="checkbox"] {
 .pure-group label {
   display: block;
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #333; /* Label text color */
+  margin-bottom: 11px;
+  font-size: smaller;
+  color: #333;
 }
 
 /* Style radio buttons and checkboxes within the pure-group */
