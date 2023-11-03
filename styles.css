@@ -483,7 +483,7 @@ a.logo.animate__animated.animate__fadeInDown {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 776px) {
+@media (max-width: 940px) {
   /* Make the contact form container full-width on mobile devices */
   .contact-form {
     max-width: 100%;
