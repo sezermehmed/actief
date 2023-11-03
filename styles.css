@@ -768,7 +768,7 @@ input[type="checkbox"]:checked {
 .footer {
   background-color: #1a1a1a;
   color: #fff;
-  padding: 40px 0;
+  padding: 0px 0;
 }
 
 .social-media {
@@ -816,9 +816,13 @@ a:hover {
 
 /* Copyright text styles */
 .copyright-section p {
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: bold;
   margin-bottom: 20px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  padding: inherit;
 }
 
 /* Footer navigation styles */
