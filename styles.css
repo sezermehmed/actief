@@ -203,6 +203,9 @@ a.logo.animate__animated.animate__fadeInDown {
     height: 20px;
     cursor: pointer;
     z-index: 997;
+    padding: 16px;
+    padding-block: 45px;
+    padding-block-start: 11px;
   }
 
   .hamburger {
