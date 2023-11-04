@@ -72,24 +72,29 @@
             <div id="main-contact-form" class="contact-form">
               <div id="contactUpdatePanel">
                 <form class="gform pure-form pure-form-stacked" method="POST" data-email="sezermehmed98@gmail.com"
-                  action="https://script.google.com/macros/s/AKfycbzLCMWgUnbYu9bGhvxrW6GkYJLVcTk6U01JlTIL6e85StihHlKlmBIgGBJDVQZZ1TyZ/exec">
+                  action="https://script.google.com/macros/s/AKfycbwNJVJTBhxpg_QuwBXSA5ZRSbOtWV-4lG7WNdWnaVZdfHwJHEaRyWVOO5If3F_jssFW/exec">
+
+
+
                   <b>Bedrijfsnaam (*):</b><input name="company" type="text" id="company"
-                    class="contact-name form-control" >
+                    class="contact-name form-control">
                   <br>
                   <b>Uw Naam (*):</b><input name="firstname" type="text" id="firstname"
-                    class="contact-name form-control" >
+                    class="contact-name form-control" required>
                   <br>
                   <b>Uw Achternaam (*):</b><input name="lastname" type="text" id="lastname"
-                    class="contact-name form-control" >
+                    class="contact-name form-control">
                   <br>
-                  <b>Uw Email Adres (*):</b><input name="emailaddress" type="text" id="emailaddress"
-                    class="contact-name form-control" >
+                  <b>Uw Email Adres (*):</b><input name="emailaddress" type="email" id="emailaddress"
+                    class="contact-name form-control" required>
+
                   <br>
+                  <p id="validationResult"></p>
                   <b>Uw Telefoonnummer (*):</b><input name="phonenumber" type="text" id="phonenumber"
-                    class="contact-name form-control" >
+                    class="contact-name form-control" required>
                   <br>
                   <b>Uw Adres, Postcode, Plaats (*):</b><input name="address" type="text" id="address"
-                    class="contact-name form-control" >
+                    class="contact-name form-control">
                   <br>
                   <span id="getinformationLabel">Ik wil graag meer informatie over (*):
                     <br>
@@ -98,7 +103,8 @@
                         <tr>
                           <td>
                             <fieldset class="pure-group"> <input id="checkbox1" type="checkbox" name="checkbox"
-                              value="Onderhoud Brandmeldsystemen" /> <label for="checkbox1">Onderhoud Brandmeldsystemen</label>
+                                value="Onderhoud Brandmeldsystemen" /> <label for="checkbox1">Onderhoud
+                                Brandmeldsystemen</label>
                             </fieldset>
                           </td>
                           <td>
@@ -168,25 +174,21 @@
 
                     <br>
                     <b>Uw Bericht (*):</b><textarea name="message" rows="5" cols="20" id="message"
-                      class="contact-name form-control" ></textarea>
+                      class="contact-name form-control" required></textarea>
                     <br>
+                    <div style="display:none" class="thankyou_message">
+
+                      <h2 style="font-size: smaller;
+                        "><em>Dank je</em> voor het contact opnemen! We nemen snel contact met u op!
+                      </h2>
+                    </div>
                     <span id="errorLabel">
                       <br>
-
                       <div id="contactUpdateProgress" style="display:none;">
-
                         <img id="progressImage" src="assets/img/login/progress.gif" style="height:25px;width:25px;">
-
                       </div>
-                      <input type="submit" name="sendButton" value="Send" id="sendButton" class="btn btn-common"
-                        >
-
-
-                      <!-- </div> -->
-
-
+                      <input type="submit" name="sendButton" value="Send" id="sendButton" class="btn btn-common">
                 </form>
-
               </div>
             </div>
           </div>
@@ -195,11 +197,8 @@
             <h4 class="column-title">
               <span class="fa fa-globe"> Adres &amp; Contact Gegevens
             </h4>
-
             <p></p>
-
             <div style="margin-bottom: 10px"></div>
-            <!-- Info - Icons List -->
             <ul class="icons-list">
               <li>
                 Tenierslaan 11-13<br />5613 DZ, Eindhoven,<br />Nederland
@@ -209,20 +208,21 @@
               <br />
               Eindhoven: 040 2026678<br />
             </ul>
-            <!-- Divider -->
+
             <div style="margin-bottom: 30px"></div>
-            <!-- Classic Heading -->
+
             <h4 class="column-title">
               Openingstijden:
             </h4>
-            <!-- Info - List -->
+
             <ul class="list-unstyled">
               <li><strong>Maandag - Vrijdag</strong> - 08:30 to 17:00</li>
             </ul>
             <br />
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318359.9014345962!2d5.216033432974191!3d51.43636452371571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6d8fa80f65ac9%3A0xec843d3743273f1!2sActief+Brandbeveiliging+B.V.+Eindhoven!5e0!3m2!1sen!2snl!4v1454966342485"
-              width="400" height="300" frameborder="0" style="border: 0;width: -webkit-fill-available;" allowfullscreen="" ></iframe>
+              width="400" height="300" frameborder="0" style="border: 0;width: -webkit-fill-available;"
+              allowfullscreen=""></iframe>
             <div style="display:none" class="thankyou_message">
               <!-- You can customize the thankyou message by editing the code below -->
               <h2><em>Thanks</em> for contacting us! We will get back to you soon!
