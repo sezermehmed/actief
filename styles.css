@@ -290,7 +290,7 @@ a.logo.animate__animated.animate__fadeInDown {
 .tech-slideshow > div {
   height: 950px;
   width: 6526px;
-  background: url(img/srollbg.jpg);
+  background: url(img/srollbg.webp);
   position: absolute;
   top: -148px;
   left: 0px;
