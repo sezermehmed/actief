@@ -137,6 +137,7 @@ p {
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s;
+  padding: 1px;
 }
 
 h1 {
@@ -228,9 +229,9 @@ a.logo.animate__animated.animate__fadeInDown {
   /* Show the navigation links when the hamburger menu is active */
   .nav-list {
     display: none;
-    background-color: #5c5a5a;
+    background-color: #303030;
     position: fixed;
-    top: 46px;
+    top: 114px;
     left: 0;
     width: 100%;
     height: auto;
