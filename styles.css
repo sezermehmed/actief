@@ -211,7 +211,7 @@ a.logo.animate__animated.animate__fadeInDown {
   .hamburger {
     width: 30px;
     height: 3px;
-    background-color: #202020;
+    /* background-color: #202020; */
     margin: 6px 0;
     transition: 0.8s;
   }
