@@ -331,10 +331,10 @@ a.logo.animate__animated.animate__fadeInDown {
 
 .row {
   margin-right: 25px;
-  margin-left: 25px;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-left: 49px;
+  margin-top: -3rem;
+  margin-bottom: 0rem;
+  padding: 3rem;
 }
 
 #services {
