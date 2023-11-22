@@ -465,13 +465,13 @@ a.logo.animate__animated.animate__fadeInDown {
   }
 }
 .contact-name {
-  width: 100%;
+  width: 95%;
   padding: 8px;
   margin: 5px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  max-width: -webkit-fill-available;
+ 
 }
 span#getinformationLabel {
   max-width: 100%;
@@ -561,7 +561,7 @@ input[type="checkbox"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  width: 91%;
   max-width: -webkit-fill-available;
 }
 
@@ -691,10 +691,6 @@ input[type="checkbox"]:checked {
   width: 50%; 
   float: left;
 
-}
-
-.contact-name {
-  width: 100%;
 }
 
 @media (max-width: 768px) {
