@@ -1,0 +1,60 @@
+# Security - Sensitive Files
+admin-submissions.php
+form-error.log
+form-backup.php
+*.log
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# PHP Configuration
+php.ini
+.htaccess.local
+
+# Database credentials
+*config*.php
+*credentials*.php
+
+# SSL/ACME Challenge
+.well-known/
+
+# Form Submissions Data
+form-submissions/
+submissions/
+uploads/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tmp
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+
+# Composer (if using PHP dependencies)
+vendor/
+composer.lock
+
+# Temporary files
+tmp/
+temp/
+cache/
+
+# System files
+Thumbs.db
+.directory
